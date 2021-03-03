@@ -1,0 +1,342 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: sans-serif;
+    color: #777;
+    line-height: 1.6;
+}
+
+a{
+    color: #fff;
+    text-decoration: none;
+}
+
+ul{
+    list-style: none;
+}
+
+.border{
+    border: 2px solid black;
+}
+
+.container{
+    width: 100%;
+    max-width: 1440px;
+    margin: 0 auto;
+    margin-bottom: 30px;
+}
+
+.red{
+    background-color: red;
+    color: #fff;
+    padding: 2px;
+}
+
+.btn{
+    border: 1px solid white;
+    padding: 0.8rem 1.8rem;
+    border-radius: 2px;
+    background-color: white;
+}
+
+.btn a{
+    color: red;
+    font-weight: bold;
+}
+
+/* HERO */
+.hero{
+    background-image: url('./images/hero.png');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    height: 748px;
+}
+
+/*  NAVIGATION */
+.main-nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100px;
+    margin: 0 15%;
+    padding: 20px 0;
+    font-size: 13px;
+}
+
+.main-nav .logo{
+    width: 100px;
+}
+
+.main-nav ul{
+    display: flex;
+}
+
+.main-nav ul li a{
+    padding: 5px 15px;
+}
+
+.main-nav ul li a:hover{
+    background-color: white;
+    color: black;
+    border-radius: 5px;
+}
+
+/* MAIN TEXT */
+.main-text{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin: 10% 15%;
+}
+
+.main-text h1{
+    color: white;
+    max-width: 18rem;
+    font-size: 1.8rem;
+    margin-bottom: 2rem;
+}
+
+/* WHO WE ARE SECTION  */
+.who-we-are{
+    background-image: url('./images/who-we-are-illustration.png'), url('./images/bg.png');
+    background-repeat: no-repeat;
+    /* background-size: 100% 100% 100% 100%; */
+    background-position: center 100px, center 220px;
+    height: 700px;
+}
+
+.who-we-are h1{
+    text-align: center;
+}
+
+.who-we-are .text{
+    max-width: 30%;
+    margin: 8%;
+}
+
+/* DIFFERENT SECTION */
+.different{
+    background-image: url('./images/diff-bg.png');
+    background-repeat: no-repeat;
+    /* background-size: 100% 100% 100% 100%; */
+    /* height: 437px; */
+}
+
+.different h1{
+    text-align: center;
+    margin: 25px 0;
+}
+
+.different .icons{
+    display: flex;
+    justify-content: space-evenly;
+    margin: 5% 5%;
+}
+
+.different .icons .icon{
+    max-width: 25%;
+}
+
+.different img, .different h3, .different p{
+    margin: 10px 0;
+}
+
+/* ILLUSTRATION & PORTAL SECTION */
+.illustration, .portal{
+    /* min-height: 430px; */
+    display: flex;
+    justify-content: center;
+}
+.illustration .content, .portal .content{
+    max-width: 35%;
+    margin-top: 50px;
+    /* margin-left: 700px; */
+}
+.illustration .content > *,
+.portal .content > *{
+    margin: 10px;
+}
+
+
+/* PRICING SECTION */
+.pricing{
+    background-image: url('./images/pricing-bg.png');
+    background-repeat: no-repeat;
+    background-size: 800px;
+    background-position: center 100px;
+    min-height: 450px;
+}
+.pricing header{
+    text-align: center;
+}
+.pricing .pricing-table{
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+
+}
+.pricing .pricing-table .card{
+    background-color: #fff;
+    border: 1px solid red;
+    border-radius: 5px;
+    padding: 20px;
+}
+.card img{
+    width: 60px;
+}
+.card .content > *{
+    margin: 10px 0;
+}
+.card .btn{
+    display: block;
+    color: #555;
+    border: 2px solid red;
+    border-radius: 5px;
+    text-align: center;
+    padding: 5px 10px;
+}
+/* FOOTER SECTION */
+footer{
+    background-color: #333;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px 100px;
+}
+
+footer .left-footer{
+    max-width: 30%;
+}
+footer .left-footer > *{
+    margin: 10px 0;
+}
+
+footer .right-footer{
+    display: flex;
+}
+footer .right-footer > *{
+    margin: 10px;
+}
+footer .right-footer h2{
+    color: #fff;
+}
+footer .right-footer a{
+    color: #777;
+}
+/* MEDIA QUERIES */
+@media(max-width:700px)
+{   
+    /* HERO SECTION */
+    .hero{
+        background-size: cover;
+        height: 500px;
+    }
+    .hero .main-nav{
+        flex-direction: column;
+        background-color: rgba(0, 0, 0, 0.5);
+        height: 150px;
+    }
+    .hero .main-nav .logo{
+        width: 150px;
+    }
+    .hero .main-nav ul li{
+        margin: 0 20px;
+    }
+    .hero .main-nav ul li a{
+        padding: 5px 10px;
+    }
+    .hero .main-text{
+        align-items: center;
+        text-align: center;
+    }
+
+    /* WHO WE ARE SECTION */
+    .who-we-are{
+        background-size: contain, contain;
+        background-position: center 110px, center 190px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 500px;
+    }
+    .who-we-are .text{
+        max-width: 100%;
+        text-align: center;
+        margin: 0;
+    }
+
+    /* DIFFERENT SECTION */
+    .different{
+        background-size: contain;
+        /* height: 800px; */
+    }
+    .different h1{
+        margin-top: 10%;
+    }
+    .different .icons{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 30px;
+    }
+    .different .icons .icon{
+        max-width: 100%;
+        text-align: center;
+        margin-top: 20px;
+    }
+    .different .icons .icon img{
+        width: 80px;
+        margin: 0 35%;
+    }
+
+    /* ILLUSTRATION & PORTAL SECTION */
+    .illustration, .portal{
+        flex-direction: column;
+        align-items: center;
+        /* height: 500px; */
+        padding: 0;
+    }
+    .illustration img{
+        width: 200px;
+        height: 200px;
+    }
+    .portal img{
+        width: 200px;
+        height: 150px;
+    }
+    .illustration .content, .portal .content{
+        max-width: 100%;
+        margin-top: 0;
+        text-align: center;
+    }
+
+    /* PRICING SECTION */
+    .pricing{
+        background-position: bottom;
+    }
+    .pricing-table{
+        margin: 0;
+        flex-direction: column;
+    }
+
+    /* FOOTER SECTION */
+    footer{
+        flex-direction: column;
+    }
+    footer .left-footer{ 
+        max-width: 100%;
+        text-align: center;
+
+    }
+    footer .right-footer{ 
+        flex-direction: column;
+        /* justify-content: center;
+        align-items: flex-start; */
+        text-align: center;
+    }
+}
